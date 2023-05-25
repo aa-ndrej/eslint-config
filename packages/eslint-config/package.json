@@ -1,0 +1,30 @@
+{
+	"name": "@aa-ndrej/eslint-config",
+	"version": "0.1.0",
+	"license": "MIT",
+	"private": true,
+	"description": "Andrej's ESLint config.",
+	"keywords": [
+		"eslint",
+		"eslint-config"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aa-ndrej/eslint-config",
+		"directory": "packages/eslint-config"
+	},
+	"homepage": "https://github.com/aa-ndrej/eslint-config#readme",
+	"bugs": "https://github.com/aa-ndrej/eslint-config/issues",
+	"author": "Andrej Agapow <dev@agapow.de> (https://github.com/aa-ndrej)",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"devDependencies": {
+		"@aa-ndrej/eslint-config-base": "workspace:^",
+		"eslint": "^8.41.0"
+	},
+	"peerDependencies": {
+		"eslint": ">=8.0.0"
+	}
+}
