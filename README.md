@@ -1,0 +1,1 @@
+# @aa-ndrej/eslint-config
