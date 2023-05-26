@@ -18,13 +18,16 @@
 	"author": "Andrej Agapow <dev@agapow.de> (https://github.com/aa-ndrej)",
 	"main": "index.js",
 	"files": [
-		"index.js"
+		"index.js",
+		"/rules/**/*.js"
 	],
-	"devDependencies": {
-		"@aa-ndrej/eslint-config-base": "workspace:^",
-		"eslint": "^8.41.0"
-	},
 	"peerDependencies": {
 		"eslint": ">=8.0.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.41.0"
+	},
+	"dependencies": {
+		"eslint-plugin-eslint-comments": "^3.2.0"
 	}
 }
