@@ -10,6 +10,6 @@ $ pnpm add -D eslint @aa-ndrej/eslint-config
 ~~~js
 // .eslintrc.js
 module.exports = {
-	extends: ['@aa-ndrej'],
+  extends: ['@aa-ndrej'],
 }
 ~~~
