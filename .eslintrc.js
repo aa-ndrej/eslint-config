@@ -2,4 +2,8 @@
 module.exports = {
 	root: true,
 	extends: ['@aa-ndrej'],
+
+	parserOptions: {
+		sourceType: 'script',
+	},
 }

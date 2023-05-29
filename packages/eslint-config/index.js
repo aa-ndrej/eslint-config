@@ -1,5 +1,7 @@
 const jsRules = require('./rules/js')
+const jsStyleRules = require('./rules/js/style')
 const tsRules = require('./rules/ts')
+const tsStyleRules = require('./rules/ts/style')
 
 
 /** @type {import('eslint').ESLint.ConfigData} */
@@ -21,7 +23,10 @@ module.exports = {
 		'plugin:eslint-comments/recommended',
 	],
 
-	rules: jsRules,
+	rules: {
+		...jsRules,
+		...jsStyleRules,
+	},
 
 	overrides: [
 		{
@@ -34,7 +39,10 @@ module.exports = {
 				// TODO: See https://typescript-eslint.io/linting/typed-linting
 				// 'plugin:@typescript-eslint/recommended-requiring-type-checking',
 			],
-			rules: tsRules,
+			rules: {
+				...tsRules,
+				...tsStyleRules,
+			},
 		},
 	],
 }
