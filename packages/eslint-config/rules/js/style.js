@@ -29,6 +29,7 @@ module.exports = {
 	// https://eslint.org/docs/latest/rules/indent
 	//
 	// ! Keep in sync with the TS equivalent rule.
+	// ! Keep in sync with the Vue equivalent rule.
 	'indent': ['error', 'tab', {
 		SwitchCase: 1,
 	}],
@@ -173,13 +174,13 @@ module.exports = {
 	// Disallow all tabs.
 	// https://eslint.org/docs/latest/rules/no-tabs
 	// 'no-tabs': 'off',
-	
+
 	// Enforce consistent spacing inside braces.
 	// https://eslint.org/docs/latest/rules/object-curly-spacing
 	//
 	// ! Keep in sync with the TS equivalent rule
 	'object-curly-spacing': ['error', 'always'],
-	
+
 	// Enforce the consistent use of either backticks, double, or single quotes.
 	// https://eslint.org/docs/latest/rules/quotes
 	//

@@ -2,6 +2,8 @@ const jsRules = require('./rules/js')
 const jsStyleRules = require('./rules/js/style')
 const tsRules = require('./rules/ts')
 const tsStyleRules = require('./rules/ts/style')
+const vueRules = require('./rules/vue')
+const vueStyleRules = require('./rules/vue/style')
 
 
 /** @type {import('eslint').ESLint.ConfigData} */
@@ -42,6 +44,19 @@ module.exports = {
 			rules: {
 				...tsRules,
 				...tsStyleRules,
+			},
+		},
+		{
+			//------
+			// Nuxt
+			//------
+			files: ['*.vue'],
+			extends: ['@nuxt/eslint-config'],
+			rules: {
+				...tsRules,
+				...tsStyleRules,
+				...vueRules,
+				...vueStyleRules,
 			},
 		},
 	],
