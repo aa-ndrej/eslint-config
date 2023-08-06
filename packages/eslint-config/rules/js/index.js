@@ -5,5 +5,5 @@ module.exports = {
 	// https://eslint.org/docs/latest/rules/no-unused-vars
 	//
 	// ! Keep in sync with the TS equivalent rule.
-	'no-unused-vars': 'error',
+	'no-unused-vars': 'warn',
 }

@@ -6,5 +6,5 @@ module.exports = {
 	//
 	// ! Keep in sync with the JS equivalent rule.
 	'no-unused-vars': 'off',
-	'@typescript-eslint/no-unused-vars': 'error',
+	'@typescript-eslint/no-unused-vars': 'warn',
 }
