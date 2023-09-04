@@ -206,10 +206,7 @@ module.exports = {
 	
 	// Enforce consistent spacing before and after semicolons.
 	// https://eslint.org/docs/latest/rules/semi-spacing
-	'semi-spacing': ['error', {
-		before: false,
-		after: true,
-	}],
+	'semi-spacing': ['error', { before: false, after: true }],
 
 	// Enforce location of semicolons.
 	// https://eslint.org/docs/latest/rules/semi-style
