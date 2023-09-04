@@ -145,7 +145,11 @@ module.exports = {
 	// https://eslint.org/docs/latest/rules/key-spacing
 	//
 	// ! Keep in sync with the TS equivalent rule.
-	'key-spacing': ['error', { beforeColon: false, afterColon: true }],
+	'key-spacing': ['error', {
+		beforeColon: false,
+		afterColon: true,
+		mode: 'minimum',
+	}],
 	
 	// Enforce consistent spacing before and after keywords.
 	// https://eslint.org/docs/latest/rules/keyword-spacing

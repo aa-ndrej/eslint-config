@@ -80,7 +80,11 @@ module.exports = {
 	//
 	// ! Keep in sync with the JS equivalent rule.
 	'key-spacing': 'off',
-	'@typescript-eslint/key-spacing': ['error', { beforeColon: false, afterColon: true }],
+	'@typescript-eslint/key-spacing': ['error', {
+		beforeColon: false,
+		afterColon: true,
+		mode: 'minimum',
+	}],
 
 	// Enforce consistent spacing before and after keywords.
 	// https://typescript-eslint.io/rules/keyword-spacing
