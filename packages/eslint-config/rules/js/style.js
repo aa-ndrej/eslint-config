@@ -192,7 +192,7 @@ module.exports = {
 	// * See https://bytearcher.com/articles/single-or-double-quotes-strings-javascript/
 	//
 	// ! Keep in sync with the TS equivalent rule
-	'quotes': ['error', 'single'],
+	'quotes': ['error', 'single', { avoidEscape: true }],
 	
 	// Enforce spacing between rest and spread operators and their expressions.
 	// https://eslint.org/docs/latest/rules/rest-spread-spacing

@@ -116,7 +116,7 @@ module.exports = {
 	//
 	// ! Keep in sync with the JS equivalent rule.
 	'quotes': 'off',
-	'@typescript-eslint/quotes': ['error', 'single'],
+	'@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
 
 	// Require or disallow semicolons instead of ASI.
 	// https://typescript-eslint.io/rules/semi
