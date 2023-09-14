@@ -42,6 +42,8 @@ module.exports = {
 				// 'plugin:@typescript-eslint/recommended-requiring-type-checking',
 			],
 			rules: {
+				...jsRules,
+				...jsStyleRules,
 				...tsRules,
 				...tsStyleRules,
 			},
@@ -53,6 +55,8 @@ module.exports = {
 			files: ['*.vue'],
 			extends: ['@nuxt/eslint-config'],
 			rules: {
+				...jsRules,
+				...jsStyleRules,
 				...tsRules,
 				...tsStyleRules,
 				...vueRules,
