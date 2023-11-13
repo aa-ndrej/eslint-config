@@ -1,8 +1,8 @@
 {
-	"name": "@aa-ndrej/eslint-config",
-	"version": "0.4.0",
+	"name": "@aa-ndrej/eslint-config-rc-nuxt",
+	"version": "0.1.0",
 	"license": "MIT",
-	"description": "Andrej's ESLint config.",
+	"description": "Andrej's ESLint config for Nuxt.",
 	"keywords": [
 		"eslint",
 		"eslint-config"

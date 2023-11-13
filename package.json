@@ -1,6 +1,5 @@
 {
 	"name": "@aa-ndrej/eslint-config-monorepo",
-	"version": "0.1.0",
 	"license": "MIT",
 	"private": true,
 	"description": "Andrej's ESLint config.",
