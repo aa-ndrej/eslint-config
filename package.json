@@ -11,7 +11,7 @@
 	"bugs": "https://github.com/aa-ndrej/eslint-config/issues",
 	"author": "Andrej Agapow <dev@agapow.de> (https://github.com/aa-ndrej)",
 	"devDependencies": {
-		"@aa-ndrej/eslint-config": "workspace:^",
+		"@aa-ndrej/eslint-config-rc-nuxt": "workspace:^",
 		"eslint": "^8.53.0"
 	}
 }
