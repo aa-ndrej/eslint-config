@@ -22,7 +22,7 @@ module.exports = {
 		// https://github.com/eslint/eslint
 		'eslint:recommended',
 		// https://github.com/mysticatea/eslint-plugin-eslint-comments
-		'plugin:eslint-comments/recommended',
+		'plugin:@eslint-community/eslint-comments/recommended',
 	],
 
 	rules: {
