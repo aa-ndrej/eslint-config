@@ -219,7 +219,10 @@ export default (opts = {}) => ({
 	// https://eslint.org/docs/latest/rules/semi-style
 	//
 	// * In semicolon-less style, semicolons are at the beginning of lines.
-	'semi-style': ['error', 'first'],
+	'semi-style': [
+		'error',
+		opts.semi === 'always' ? 'last' : 'first',
+	],
 	
 	// Enforce consistent spacing before blocks.
 	// https://eslint.org/docs/latest/rules/space-before-blocks
