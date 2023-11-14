@@ -10,8 +10,9 @@
 	"homepage": "https://github.com/aa-ndrej/eslint-config#readme",
 	"bugs": "https://github.com/aa-ndrej/eslint-config/issues",
 	"author": "Andrej Agapow <dev@agapow.de> (https://github.com/aa-ndrej)",
+	"type": "module",
 	"devDependencies": {
-		"@aa-ndrej/eslint-config-rc-nuxt": "workspace:^",
+		"@aa-ndrej/eslint-config": "workspace:^",
 		"eslint": "^8.53.0"
 	}
 }
