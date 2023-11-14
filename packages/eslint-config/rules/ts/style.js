@@ -20,7 +20,7 @@ import indent from './style-indent.js'
 
 
 /** @type {Partial<import('eslint').Linter.RulesRecord>} */
-export default {
+export default (opts = {}) => ({
 
 	//-----------------------
 	// #region - Indentation
@@ -116,14 +116,21 @@ export default {
 	//
 	// ! Keep in sync with the JS equivalent rule.
 	'quotes': 'off',
-	'@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
+	'@typescript-eslint/quotes': [
+		'error',
+		opts.quotes ?? 'single',
+		{ avoidEscape: true },
+	],
 
 	// Require or disallow semicolons instead of ASI.
 	// https://typescript-eslint.io/rules/semi
 	//
 	// ! Keep in sync with the JS equivalent rule.
 	'semi': 'off',
-	'@typescript-eslint/semi': ['error', 'never'],
+	'@typescript-eslint/semi': [
+		'error',
+		opts.semi ?? 'never',
+	],
 
 	// Enforce consistent spacing before blocks.
 	// https://typescript-eslint.io/rules/space-before-blocks
@@ -142,4 +149,4 @@ export default {
 		named: 'never',
 		asyncArrow: 'always',
 	}],
-}
+})

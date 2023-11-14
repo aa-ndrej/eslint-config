@@ -17,7 +17,7 @@
 
 
 /** @type {Partial<import('eslint').Linter.RulesRecord>} */
-export default {
+export default (opts = {}) => ({
 
 	//-----------------------
 	// #region - Indentation
@@ -192,7 +192,11 @@ export default {
 	// * See https://bytearcher.com/articles/single-or-double-quotes-strings-javascript/
 	//
 	// ! Keep in sync with the TS equivalent rule
-	'quotes': ['error', 'single', { avoidEscape: true }],
+	'quotes': [
+		'error',
+		opts.quotes ?? 'single',
+		{ avoidEscape: true },
+	],
 	
 	// Enforce spacing between rest and spread operators and their expressions.
 	// https://eslint.org/docs/latest/rules/rest-spread-spacing
@@ -202,7 +206,10 @@ export default {
 	// https://eslint.org/docs/latest/rules/semi
 	//
 	// ! Keep in sync with the TS equivalent rule.
-	'semi': ['error', 'never'],
+	'semi': [
+		'error',
+		opts.semi ?? 'never',
+	],
 	
 	// Enforce consistent spacing before and after semicolons.
 	// https://eslint.org/docs/latest/rules/semi-spacing
@@ -236,4 +243,4 @@ export default {
 
 	// #endregion
 	//-------------------------------------------
-}
+})

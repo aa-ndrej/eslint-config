@@ -14,7 +14,7 @@ export function defineESLintConfig(configs) {
 }
 
 
-export function baseConfig() {
+export function baseConfig(opts = {}) {
 	/** @type {import('eslint').ESLint.ConfigData} */
 	return [
 		{
@@ -43,7 +43,7 @@ export function baseConfig() {
 				...eslintComments.configs.recommended.rules,
 	
 				...jsRules,
-				...jsStyleRules,
+				...jsStyleRules(opts.codeStyle),
 			},
 		},
 		{
@@ -69,7 +69,7 @@ export function baseConfig() {
 				...ts.configs.recommended.rules,
 	
 				...tsRules,
-				...tsStyleRules,
+				...tsStyleRules(opts.codeStyle),
 			},
 		},
 	]
