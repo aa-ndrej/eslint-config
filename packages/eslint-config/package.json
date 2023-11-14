@@ -1,6 +1,6 @@
 {
 	"name": "@aa-ndrej/eslint-config",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"license": "MIT",
 	"description": "Andrej's ESLint config.",
 	"keywords": [
