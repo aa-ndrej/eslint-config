@@ -10,7 +10,7 @@ import tsStyleRules from './rules/ts/style.js'
 
 
 export function defineESLintConfig(configs) {
-	return configs.flat()
+	return configs.flat() // No pun intended.
 }
 
 
@@ -53,6 +53,8 @@ export function baseConfig(opts = {}) {
 			// TODO: See https://typescript-eslint.io/linting/typed-linting
 			// TODO: Adjust when typescript-eslint supports flat config.
 			//       Issue: https://github.com/typescript-eslint/typescript-eslint/issues/7694
+
+			// ? TODO: https://github.com/typescript-eslint/typescript-eslint/issues/7694#issuecomment-1854655034
 	
 			files: ['**/*.+(ts|tsx|cts|mts)'],
 	
