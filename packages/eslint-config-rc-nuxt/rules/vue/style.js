@@ -8,8 +8,8 @@ module.exports = {
 	
 	// Enforce the maximum number of attributes per line.
 	// https://eslint.vuejs.org/rules/max-attributes-per-line
-	'vue/max-attributes-per-line': ['error', {
-		singleline: { max: 3 },
+	'vue/max-attributes-per-line': ['warn', {
+		singleline: { max: 6 },
 		multiline: { max: 1 },
 	}],
 	
