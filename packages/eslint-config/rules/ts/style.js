@@ -58,7 +58,18 @@ export default (opts = {}) => ({
 	//
 	// ! Keep in sync with the JS equivalent rule.
 	'comma-dangle': 'off',
-	'@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
+	'@typescript-eslint/comma-dangle': ['error', {
+		arrays: 'always-multiline',
+		objects: 'always-multiline',
+		imports: 'always-multiline',
+		exports: 'always-multiline',
+		functions: 'only-multiline',
+
+		// TypeScript specific options.
+		enums: 'always-multiline',
+		generics: 'always-multiline',
+		tuples: 'always-multiline',
+	}],
 
 	// Enforce consistent spacing before and after commas.
 	// https://typescript-eslint.io/rules/comma-spacing

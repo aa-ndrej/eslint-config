@@ -111,7 +111,13 @@ export default (opts = {}) => ({
 	// * This also improves the clarity of version-control diffs.
 	//
 	// ! Keep in sync with the TS equivalent rule.
-	'comma-dangle': ['error', 'always-multiline'],
+	'comma-dangle': ['error', {
+		arrays: 'always-multiline',
+		objects: 'always-multiline',
+		imports: 'always-multiline',
+		exports: 'always-multiline',
+		functions: 'only-multiline',
+	}],
 	
 	// Enforce consistent spacing before and after commas.
 	// https://eslint.org/docs/latest/rules/comma-spacing
