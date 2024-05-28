@@ -1,3 +1,5 @@
+// @ts-check
+
 /** @type {Partial<import('eslint').Linter.RulesRecord>} */
 export default {
 

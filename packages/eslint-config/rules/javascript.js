@@ -1,5 +1,11 @@
+// @ts-check
+
 /** @type {Partial<import('eslint').Linter.RulesRecord>} */
 export default {
+
+	// Enforce consistent brace style for all control statements.
+	// https://eslint.org/docs/latest/rules/curly
+	'curly': ['error', 'multi-line', 'consistent'],
 
 	// Disallow unused variables.
 	// https://eslint.org/docs/latest/rules/no-unused-vars
