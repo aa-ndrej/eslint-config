@@ -30,7 +30,6 @@
 	},
 	"dependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": "^4.1.0",
-		"@nuxt/eslint-config": "^0.2.0",
 		"@typescript-eslint/eslint-plugin": "^6.10.0"
 	}
 }
