@@ -63,6 +63,10 @@ export default (opts = {}) => ({
 		maxEOF: 0,
 	}],
 
+	// Require or disallow padding within blocks.
+	// https://eslint.style/rules/default/padded-blocks
+	'@stylistic/padded-blocks': ['off'],
+
 	// Enforce location of semicolons.
 	// https://eslint.style/rules/default/semi-style
 	//
