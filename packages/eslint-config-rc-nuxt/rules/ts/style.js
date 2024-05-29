@@ -1,3 +1,5 @@
+// @ts-check
+
 // ! ESLint stylistic rules are frozen !
 // https://eslint.org/blog/2020/05/changes-to-rules-policies (2023-05-29)
 // https://typescript-eslint.io/linting/troubleshooting/formatting (2023-05-29)

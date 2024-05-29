@@ -1,3 +1,5 @@
+// @ts-check
+
 // ! ESLint stylistic rules are frozen !
 // https://eslint.org/blog/2020/05/changes-to-rules-policies (2023-05-29)
 // https://typescript-eslint.io/linting/troubleshooting/formatting (2023-05-29)
@@ -33,15 +35,15 @@ module.exports = {
 	'indent': ['error', 'tab', {
 		SwitchCase: 1,
 	}],
-	
+
 	// Disallow mixed spaces and tabs for indentation.
 	// https://eslint.org/docs/latest/rules/no-mixed-spaces-and-tabs
 	'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
 
 	// #endregion
 	//-----------------------
-	
-	
+
+
 	//-----------------------------------
 	// #region - ESLint Suggestions list
 	//-----------------------------------
@@ -51,11 +53,11 @@ module.exports = {
 	// Enforce consistent brace style for all control statements.
 	// https://eslint.org/docs/latest/rules/curly
 	'curly': ['error', 'multi-line', 'consistent'],
-	
+
 	// Require quotes around object literal property names.
 	// https://eslint.org/docs/latest/rules/quote-props
 	'quote-props': ['error', 'consistent-as-needed'],
-	
+
 	// #endregion
 	//-----------------------------------
 
@@ -69,7 +71,7 @@ module.exports = {
 	// Enforce linebreaks after opening and before closing array brackets.
 	// https://eslint.org/docs/latest/rules/array-bracket-newline
 	'array-bracket-newline': ['error', 'consistent'],
-	
+
 	// Enforce consistent spacing inside array brackets.
 	// https://eslint.org/docs/latest/rules/array-bracket-spacing
 	'array-bracket-spacing': ['error', 'never'],
@@ -96,7 +98,7 @@ module.exports = {
 	//
 	// ! Keep in sync with the TS equivalent rule.
 	'block-spacing': ['error', 'always'],
-	
+
 	// Enforce consistent brace style for blocks.
 	// https://eslint.org/docs/latest/rules/brace-style
 	//
@@ -105,7 +107,7 @@ module.exports = {
 
 	// Require or disallow trailing commas.
 	// https://eslint.org/docs/latest/rules/comma-dangle
-	// 
+	//
 	// * Trailing commas simplify adding and removing items to objects and arrays,
 	// * since only the lines you are modifying must be touched.
 	// * This also improves the clarity of version-control diffs.
@@ -118,13 +120,13 @@ module.exports = {
 		exports: 'always-multiline',
 		functions: 'only-multiline',
 	}],
-	
+
 	// Enforce consistent spacing before and after commas.
 	// https://eslint.org/docs/latest/rules/comma-spacing
 	//
 	// ! Keep in sync with the TS equivalent rule.
 	'comma-spacing': ['error', { before: false, after: true }],
-	
+
 	// Enforce consistent comma style.
 	// https://eslint.org/docs/latest/rules/comma-style
 	'comma-style': ['error', 'last'],
@@ -146,7 +148,7 @@ module.exports = {
 	//
 	// ! Keep in sync with the TS equivalent rule.
 	'func-call-spacing': ['error', 'never'],
-	
+
 	// Enforce consistent spacing between keys and values in object literal properties.
 	// https://eslint.org/docs/latest/rules/key-spacing
 	//
@@ -156,7 +158,7 @@ module.exports = {
 		afterColon: true,
 		mode: 'minimum',
 	}],
-	
+
 	// Enforce consistent spacing before and after keywords.
 	// https://eslint.org/docs/latest/rules/keyword-spacing
 	//
@@ -199,17 +201,17 @@ module.exports = {
 	//
 	// ! Keep in sync with the TS equivalent rule
 	'quotes': ['error', 'single', { avoidEscape: true }],
-	
+
 	// Enforce spacing between rest and spread operators and their expressions.
 	// https://eslint.org/docs/latest/rules/rest-spread-spacing
 	'rest-spread-spacing': ['error', 'never'],
-	
+
 	// Require or disallow semicolons instead of ASI.
 	// https://eslint.org/docs/latest/rules/semi
 	//
 	// ! Keep in sync with the TS equivalent rule.
 	'semi': ['error', 'never'],
-	
+
 	// Enforce consistent spacing before and after semicolons.
 	// https://eslint.org/docs/latest/rules/semi-spacing
 	'semi-spacing': ['error', { before: false, after: true }],
@@ -219,13 +221,13 @@ module.exports = {
 	//
 	// * In semicolon-less style, semicolons are at the beginning of lines.
 	'semi-style': ['error', 'first'],
-	
+
 	// Enforce consistent spacing before blocks.
 	// https://eslint.org/docs/latest/rules/space-before-blocks
 	//
 	// ! Keep in sync with the TS equivalent rule.
 	'space-before-blocks': ['error', 'always'],
-	
+
 	// Enforce consistent spacing before `function` definition opening parenthesis.
 	// https://eslint.org/docs/latest/rules/space-before-function-paren
 	//
@@ -235,7 +237,7 @@ module.exports = {
 		named: 'never',
 		asyncArrow: 'always',
 	}],
-	
+
 	// Enforce consistent spacing inside parentheses.
 	// https://eslint.org/docs/latest/rules/space-in-parens
 	'space-in-parens': ['error', 'never'],

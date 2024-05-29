@@ -1,3 +1,5 @@
+// @ts-check
+
 const jsRules = require('./rules/js')
 const jsStyleRules = require('./rules/js/style')
 const tsRules = require('./rules/ts')
