@@ -1,15 +1,26 @@
 # @aa-ndrej/eslint-config
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/aa-ndrej/eslint-config?style=for-the-badge)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/aa-ndrej/eslint-config?filename=packages%2Feslint-config%2Fpackage.json&style=flat-square)
 
-## Quickstart
+
+
+## Installation
 
 ~~~bash
 $ pnpm add -D eslint @aa-ndrej/eslint-config
 ~~~
+
+
+## Usage
+
 ~~~js
-// .eslintrc.js
-module.exports = {
-  extends: ['@aa-ndrej'],
-}
+// eslint.config.mjs
+
+import { baseConfig, defineESLintConfig } from '@aa-ndrej/eslint-config'
+
+export default defineESLintConfig([
+  baseConfig({
+    // Optional options...
+  }),
+])
 ~~~
