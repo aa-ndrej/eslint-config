@@ -1,6 +1,6 @@
 {
 	"name": "@aa-ndrej/eslint-config",
-	"version": "0.7.0",
+	"version": "0.7.1",
 	"license": "MIT",
 	"description": "Andrej's ESLint config.",
 	"keywords": [
@@ -25,12 +25,12 @@
 		"eslint": ">=8.57.0"
 	},
 	"devDependencies": {
-		"eslint": "^9.3.0"
+		"eslint": "^9.34.0"
 	},
 	"dependencies": {
-		"@eslint-community/eslint-plugin-eslint-comments": "^4.3.0",
-		"@eslint/js": "^9.3.0",
+		"@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
+		"@eslint/js": "^9.34.0",
 		"@stylistic/eslint-plugin": "^2.1.0",
-		"typescript-eslint": "8.0.0-alpha.20"
+		"typescript-eslint": "8.41.0"
 	}
 }
