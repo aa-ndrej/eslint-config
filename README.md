@@ -3,7 +3,6 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/aa-ndrej/eslint-config?filename=packages%2Feslint-config%2Fpackage.json&style=flat-square)
 
 
-
 ## Installation
 
 ~~~bash
